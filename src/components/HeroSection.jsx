@@ -4,11 +4,11 @@ import video2 from "../assets/video2.mp4";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-4xl sm:text-6xl text-7xl text-center tracking-wide">
-        VirtualR build tools
+      <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+        VirtualR Build Tools
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text font-medium">
           {" "}
-          for developers
+          For Developers
         </span>
       </h1>
       <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
@@ -16,23 +16,24 @@ const HeroSection = () => {
         intuitive development tools. Get started today and turn your imagination
         into immersive reality!
       </p>
-      <div className="flex justify-center my-10">
+      <div className="flex flex-col sm:flex-row justify-center my-10 gap-4">
         <a
           href="#"
-          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-6 sm:px-8 rounded-md text-center"
         >
-          Start For Free
+          Start for free
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
+        <a href="#" className="py-3 px-6 sm:px-8 rounded-md border text-center">
           Documentation
         </a>
       </div>
-      <div className="flex mt-2 justify-center">
+
+      <div className="flex mt-10 justify-center">
         <video
           autoPlay
           loop
           muted
-          className="rounded-l w-1/3 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
+          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
         >
           <source src={video1} type="video/mp4" />
           Your browser does not support the video tag.
@@ -41,7 +42,7 @@ const HeroSection = () => {
           autoPlay
           loop
           muted
-          className="rounded-lg w-1/3 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
+          className="rounded-lg w-1/2 border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4"
         >
           <source src={video2} type="video/mp4" />
           Your browser does not support the video tag.
